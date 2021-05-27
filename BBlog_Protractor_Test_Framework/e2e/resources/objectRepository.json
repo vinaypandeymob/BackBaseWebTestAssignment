@@ -1,0 +1,31 @@
+{
+  "loginPage":
+  {
+    "bbloglogo": ["css",".navbar-brand"],
+    "linktxtsignin": ["xpath","//a[normalize-space()='Sign in']"],
+    "txtusername": ["css","[placeholder='Username']"],
+    "txtpassword": ["css","[placeholder='Password']"],
+    "btnlogin": ["css",".btn"],
+    "errorMessageLogin": ["css","//li[contains(.,'email or password is invalid')]"],
+    "invalidcredentialstext": ["xpath","//span[contains(text(),'You have entered an invalid username and/or passwo')]"],
+    "welcometxt" :["xpath", "//p[.='A place to share your knowledge.']"]
+  },
+  "homePage":
+  {
+    "yourfeed":["xpath",".nav-pills > li:nth-of-type(1) > .nav-link"],
+    "btnStartNow": ["xpath","//a[@class='btn welcome-screen-content__button-call-to-action']"],
+    "txtwelcome": ["xpath", "//p[.='A place to share your knowledge.']"],
+    "btnlogout": ["xpath","//a[@class='btn-sm btn-link bb-user-menu__user-info__logout ng-binding']"]
+  },
+  "postArticle":
+  {
+    "lnknewpost": ["xpath","//a[contains(.,'New Post')]"],
+    "txtarticletitle": ["css","[placeholder='Article Title']"],
+    "txtarticleabout": ["xpath","/html[1]/body[1]/app-root[1]/app-article-editor[1]/div[1]/div[1]/div[1]/div[1]/app-dynamic-form[1]/form[1]/app-input[2]/fieldset[1]/input[1]"],
+    "txtareaarticle": ["css","textarea"],
+    "txttag": ["css","[placeholder='Enter Tags']"],
+    "btnpublisharticle": ["css",".btn"],
+    "btneditarticle": ["xpath","//div[@class='banner']//a[contains(.,'Edit Article')]"],
+    "btndeletearticle":["xpath","//div[@class='banner']//button[@class='btn btn-sm btn-outline-danger']"]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "e2e-test",
+  "version": "0.0.1",
+  "description": "e2e-test e2e tests",
+  "repository": {
+    "type": "git",
+    "url": "https://stash.backbase.com/scm/esald/e2e-test.git"
+  },
+  "main": "./configuration/base.conf.js",
+  "scripts": {
+    "test:local-explore": "protractor configuration/local.conf.js --baseUrl 'http://localhost:7777/portalserver/sign-in' --elementExplorer",
+    "test:local": "protractor e2e/chrome.conf.js",
+    "test:dev": "protractor configuration/dev.conf.js",
+    "test:sit": "protractor configuration/sit.conf.js",
+    "test": "protractor configuration/test.conf.js",
+    "postinstall": "npm run wd-update",
+    "wd-update": "webdriver-manager update",
+    "wd-start": "webdriver-manager start",
+    "test:dev-chrome": "protractor configuration/dev.conf.js --seleniumAddress 'http://localhost:4444/wd/hub' --capabilities.browserName 'chrome'",
+    "test:dev-firefox": "protractor configuration/dev.conf.js --seleniumAddress 'http://localhost:4444/wd/hub' --capabilities.browserName 'firefox'",
+    "test:dev-safari": "protractor configuration/dev.conf.js --seleniumAddress 'http://localhost:4444/wd/hub' --capabilities.browserName 'safari'",
+    "test:dev-android": "protractor configuration/dev.conf.js --seleniumAddress 'http://localhost:4723/wd/hub' --capabilities.browserName 'chrome' --capabilities.platformName 'Android' --capabilities.platformVersion '5.1.1' --capabilities.deviceName 'Redmi' --params.isMobileView 'true'",
+    "test:local-chrome-headless": "protractor configuration/local.conf.js --capabilities.browserName=--chrome --capabilities.chromeOptions.args=--headless --capabilities.chromeOptions.args=--disable-gpu --capabilities.chromeOptions.args=--window-size=1690,1000",
+    "test:local-firefox-headless": "protractor configuration/local.conf.js --capabilities.browserName=--firefox --capabilities.firefoxOptions.args=--headless --capabilities.moz':'firefoxOptions.args=--headless",
+    "test:dev-chrome-headless": "protractor configuration/dev.conf.js --capabilities.browserName=--chrome --capabilities.chromeOptions.args=--headless --capabilities.chromeOptions.args=--disable-gpu --capabilities.chromeOptions.args=--window-size=1690,1000",
+    "test:sit-chrome-headless": "protractor configuration/sit.conf.js --capabilities.browserName=--chrome --capabilities.chromeOptions.args=--headless --capabilities.chromeOptions.args=--disable-gpu --capabilities.chromeOptions.args=--window-size=1690,1000",
+    "e2e": "node ./node_modules/nativescript-dev-appium/check-dev-deps.js &&  jasmine --config=./e2e/config/jasmine.json "
+  },
+  "devDependencies": {
+    "@types/jasmine": "~3.3.4",
+    "@types/node": "~10.12.18",
+    "@wdio/cli": "^6.5.0",
+    "allure-commandline": "^2.13.8",
+    "jasmine": "~3.3.1",
+    "jasmine-core": "~3.3.0",
+    "jasmine-reporters": "^2.2.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "protractor": "^3.3.0",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "protractor-jasmine2-html-reporter-with-total-failed": "0.0.8",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "wd": "^1.13.0"
+  },
+  "dependencies": {
+    "fibers": "^4.0.2",
+    "jasmine-await": "0.0.3",
+    "jasmine-custom-reporters": "^1.2.1",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-http-client": "^1.0.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "touch-action": "^1.0.1",
+    "webdriver-manager": "^12.1.6"
+  }
+}

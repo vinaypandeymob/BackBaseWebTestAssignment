@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TC_001 Verify and validate the BBlog URL. " timestamp="2021-05-27T19:35:38" hostname="localhost" time="7.907" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="TC_001 Verify and validate the BBlog URL. " name="Launch &amp; verify BBlog URL" time="7.905" />
+ </testsuite>
+ <testsuite name="TC_002 Verify the login functionality with invalid credential" timestamp="2021-05-27T19:35:46" hostname="localhost" time="17.943" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="TC_002 Verify the login functionality with invalid credential" name="Navigate ot the sign in" time="4.814" />
+  <testcase classname="TC_002 Verify the login functionality with invalid credential" name="Login with Invalid Credentials" time="13.126" />
+ </testsuite>
+ <testsuite name="TC_003 Verify the login functionality with valid credential" timestamp="2021-05-27T19:36:04" hostname="localhost" time="21.278" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="TC_003 Verify the login functionality with valid credential" name="Login with valid Credentials" time="21.276" />
+ </testsuite>
+ <testsuite name="TC_004 Verify the home screen after geting logged in Testcases" timestamp="2021-05-27T19:36:25" hostname="localhost" time="4.469" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="TC_004 Verify the home screen after geting logged in Testcases" name="Verify user LoggedIn successfully" time="4.467" />
+ </testsuite>
+ <testsuite name="TC_005 Verify the screen when user create article with empty data fields are empty" timestamp="2021-05-27T19:36:29" hostname="localhost" time="28.459" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="TC_005 Verify the screen when user create article with empty data fields are empty" name="Click on the Publish Article button, without entering any data in all text fields." time="28.458">
+   <failure type="toBe" message="Expected &apos;Edit Article&apos; to be &apos;Publish Article&apos;."><![CDATA[Error: Failed expectation
+    at module.exports.verifyItisPostScreen (/Users/vinaypandey/Home/Assignment/BBlog_Protractor_Test_Framework/e2e/pages/articlecurd.js:70:45)
+    at UserContext.<anonymous> (/Users/vinaypandey/Home/Assignment/BBlog_Protractor_Test_Framework/e2e/specs/testarticle.js:21:21)
+    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2974:25)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="TC_006 Verify the create New Post functionality" timestamp="2021-05-27T19:36:58" hostname="localhost" time="51.456" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="TC_006 Verify the create New Post functionality" name="Create post article functionality" time="51.455" />
+ </testsuite>
+ <testsuite name="TC_007 Verify the edit Article functionality" timestamp="2021-05-27T19:37:49" hostname="localhost" time="31.611" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="TC_007 Verify the edit Article functionality" name="Edit the created article " time="31.61" />
+ </testsuite>
+ <testsuite name="Verify the created article" timestamp="2021-05-27T19:38:21" hostname="localhost" time="4.425" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Verify the created article" name="Read the created post article" time="4.424" />
+ </testsuite>
+ <testsuite name="TC_009 Verify the delete article functionality" timestamp="2021-05-27T19:38:25" hostname="localhost" time="8.597" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="TC_009 Verify the delete article functionality" name="Delete the created articles" time="8.596" />
+ </testsuite>
+</testsuites>

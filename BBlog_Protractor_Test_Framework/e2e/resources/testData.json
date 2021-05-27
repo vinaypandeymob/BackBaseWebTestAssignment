@@ -1,0 +1,38 @@
+{
+  "url": {
+    "baseUrl": "https://qa-task.backbasecloud.com/#/",
+    "signInUrl": "https://qa-task.backbasecloud.com/#/login",
+    "newpost": "https://qa-task.backbasecloud.com/#/editor",
+    "mysetting": "https://qa-task.backbasecloud.com/#/settings",
+    "javasciptalert": "https://candidatex:qa-is-cool@qa-task.backbasecloud.com"
+  },
+  "post": {
+    "title": "Change the title of the article",
+    "about": "about the text",
+    "textArea": "lorem ipsum",
+    "tag": "Mob",
+    "btnNewPublish": "Publish Article",
+    "btnEditPublish": "Edit Article"
+  },
+  "Invalidcredentials": {
+    "username": "noname",
+    "password": "noname"
+  },
+  "AlertUsernamePassword": {
+    "username": "noname",
+    "password": "noname"
+  },
+  "Validcredentials": {
+    "username": "info.vinaypandey@gmail.com",
+    "password": "123456"
+  },
+  "errorMessages": {
+    "Invalidtext": "email or password is invalid"
+  },
+  "welcometext": {
+    "greetingText": "A place to share your knowledge."
+  },
+  "newTitle": {
+    "title": "New Title"
+  }
+}
